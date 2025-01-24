@@ -4,11 +4,11 @@
 ### Banco de Dados MySQL:
 - Serviço: Utilize o Amazon RDS para MySQL como solução gerenciada.
 - Configuração: Crie uma instância RDS em Multi-AZ para alta disponibilidade e backup automático.
-- Tamanho: Escolha um tipo de instância que suporte sua carga atual (ex: db.t3.medium ou db.m5.large).
+- Tamanho: Escolha um tipo de instância que suporte sua carga atual (ex: db.m5.large).
 
 ### Servidor da Aplicação (Frontend e Backend):
 - Serviço: Crie instâncias EC2 para hospedar o frontend (React) e o backend (APIs com Nginx).
-- Configuração: Para o frontend, uma instância t2.micro ou t3.micro pode ser suficiente inicialmente. Para o backend, considere uma instância t3.small ou t3.medium.
+- Configuração: Para o frontend, uma instância t3.micro pode ser suficiente inicialmente. Para o backend, considere uma instância t3.small ou t3.medium.
 - Armazenamento: Utilize EBS para armazenamento persistente.
 
 ### Configurar Segurança
@@ -29,8 +29,13 @@
 - AWS CLI e AWS Management Console para gerenciar recursos.
 
 ### Qual o diagrama da infraestrutura na AWS?
+-Diagrama de arquitetura
 
-![imagem (3)](https://github.com/user-attachments/assets/de4dc7a8-764f-49fe-848d-dafe0fe1ece6)
+![imagem (8)](https://github.com/user-attachments/assets/b0ff1138-3084-4172-9bc4-f8c1e2f6a4f1)
+
+- Diagrama de migração
+![imagem (7)](https://github.com/user-attachments/assets/d4248754-74b9-436e-8114-a93ac59625e4)
+
 
 ### Como serão garantidos os requisitos de Segurança?
 - Uso de grupos de segurança para controlar o tráfego de entrada e saída.
@@ -44,6 +49,12 @@
 
 ### Qual o custo da infraestrutura na AWS (AWS Calculator)?
 - Estimativa de custos utilizando a AWS Pricing Calculator.
-- 
+- Custo da EC2 é igual a U$ 68.98
+- Custo da migração dos serviços é igual a U$ 240.39
+- Custo do banco de dados RDS é igual a U$ 151.47
+
+![imagem (5)](https://github.com/user-attachments/assets/f1791167-9ba5-4776-9e25-d05ccadff8ce)
+
 #
-#
+
+# Fase 2: Modernização com Kubernetes
