@@ -34,7 +34,8 @@
 ![imagem (8)](https://github.com/user-attachments/assets/b0ff1138-3084-4172-9bc4-f8c1e2f6a4f1)
 
 - Diagrama de migração
-![imagem (7)](https://github.com/user-attachments/assets/d4248754-74b9-436e-8114-a93ac59625e4)
+![Projeto Final Kubernets - Diagrama 1 - Migração drawio - Google Drive - Google Chrome 27_01_2025 09_50_59](https://github.com/user-attachments/assets/d8295b85-a256-4214-8416-9264764becb3)
+
 
 
 ### Como serão garantidos os requisitos de Segurança?
@@ -58,3 +59,39 @@
 #
 
 # Fase 2: Modernização com Kubernetes
+### Quais atividades são necessárias para a migração?
+- Containerização das aplicações usando Docker.
+- Criação do cluster EKS (Elastic Kubernetes Service).
+- Implantação das aplicações no EKS.
+### Quais as ferramentas vão ser utilizadas?
+- Amazon EKS para gerenciamento do Kubernetes.
+- Amazon Elastic Container Registry (ECR) para armazenar imagens Docker.
+- AWS CloudFormation ou Terraform para provisionamento da infraestrutura.
+### Qual o diagrama da infraestrutura na AWS?
+-
+
+### Configurar o Amazon EKS
+- Criar um Cluster EKS:
+  - Utilize o Amazon Elastic Kubernetes Service (EKS) para criar um cluster Kubernetes gerenciado.
+  - O EKS gerencia automaticamente a infraestrutura do Kubernetes em várias zonas de disponibilidade.
+- Configuração do Cluster:
+  -  Use o AWS Management Console ou a AWS CLI para criar o cluster EKS.
+  -  Configure o kubectl para interagir com seu cluster EKS.
+### Implantar Aplicações no EKS
+- Containerização das Aplicações:
+  - Crie imagens Docker para suas aplicações frontend e backend.
+  - Armazene as imagens no Amazon Elastic Container Registry (ECR).
+- Implantar no EKS:
+  - Use arquivos YAML para definir os deployments e services no Kubernetes.
+  - Configure um Load Balancer (ALB) para gerenciar o tráfego entre as instâncias.
+### Banco de Dados Gerenciado
+- RDS como Serviço PaaS:
+  - Continue utilizando o Amazon RDS como seu banco de dados gerenciado.
+### Persistência de Objetos
+- Amazon S3:
+  - Utilize o Amazon S3 para armazenar objetos como imagens e vídeos.
+### Segurança
+- IAM Roles for Service Accounts (IRSA):
+  - Use IRSA para conceder permissões específicas aos pods do Kubernetes.
+- Network Policies:
+  - Implemente políticas de rede no Kubernetes para controlar o tráfego entre pods.
