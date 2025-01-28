@@ -70,6 +70,16 @@
 ### Qual o diagrama da infraestrutura na AWS?
 -
 
+### Como serão garantidos os requisitos de Segurança?
+- Implementação de Network Policies no Kubernetes para controlar o tráfego entre pods.
+- Uso de IAM roles for service accounts (IRSA) no EKS para controle granular de acesso.
+- Monitoramento contínuo com AWS CloudTrail e Amazon GuardDuty.
+### Como será realizado o processo de Backup?
+- Backups automáticos do Amazon RDS configurados com retenção apropriada.
+- Uso do Velero ou similar para backups dos volumes persistentes no Kubernetes.
+### Qual o custo da infraestrutura na AWS (AWS Calculator)?
+- Estimativa dos custos utilizando a AWS Pricing Calculator.
+  - Custo dos serviços EKS, RDS, S3, ECR, e outros componentes envolvidos na nova arquitetura.
 ### Configurar o Amazon EKS
 - Criar um Cluster EKS:
   - Utilize o Amazon Elastic Kubernetes Service (EKS) para criar um cluster Kubernetes gerenciado.
@@ -95,3 +105,4 @@
   - Use IRSA para conceder permissões específicas aos pods do Kubernetes.
 - Network Policies:
   - Implemente políticas de rede no Kubernetes para controlar o tráfego entre pods.
+#
