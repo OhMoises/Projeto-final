@@ -69,6 +69,8 @@
 - AWS CloudFormation ou Terraform para provisionamento da infraestrutura.
 ### Qual o diagrama da infraestrutura na AWS?
 -
+![Projeto Final Kubernets - Diagrama 2 drawio](https://github.com/user-attachments/assets/ee18d826-6308-4fc6-a1d8-1ccb212530b9)
+
 
 ### Como serão garantidos os requisitos de Segurança?
 - Implementação de Network Policies no Kubernetes para controlar o tráfego entre pods.
@@ -80,6 +82,10 @@
 ### Qual o custo da infraestrutura na AWS (AWS Calculator)?
 - Estimativa dos custos utilizando a AWS Pricing Calculator.
   - Custo dos serviços EKS, RDS, S3, ECR, e outros componentes envolvidos na nova arquitetura.
+ ![CALCULADORA 2](https://github.com/user-attachments/assets/5425c1bd-2859-4ca9-9df6-8b7f91232cb7)
+
+![CALCULADORA pt 2](https://github.com/user-attachments/assets/644a37d5-9c04-48b8-b574-824544d7597d)
+  
 ### Configurar o Amazon EKS
 - Criar um Cluster EKS:
   - Utilize o Amazon Elastic Kubernetes Service (EKS) para criar um cluster Kubernetes gerenciado.
